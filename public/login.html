@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ja"
+      data-default-locale="en"
+      data-locale="ja"
+      data-env="production"
+      >
+<head>
+  <title ng-bind="title">Gyazo にログイン</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <!--
+                                  ?O&&O[
+                          &&&&&&&&&&&&&&&&&&&&&&&&&m
+                       &&&&&&&&&&&&&&&&&&&&&&&&&&&$$$
+                     &&&&&&&&&&&&& &&&&&&&&&&&&&&$$
+                    &&&&&&&&&&&   i xO &&&&&&&&&&$.   il
+                   &&&&&&&&&&&&&&  )&&&&&&&&&&&&&$    illl
+                   &&&&&&&&&&&&&&& M&&&&&&&&&&&&&$      ll
+                   &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&%   ++ll++
+                   &&&     @[            @    I&&&   ++ll++
+                   &&&                        I&&&   ++ll++
+                   &&&*0JLLLf{,       ;rfLLLLL&&&&   ++ll++
+                   &&&&&&oYLLLLLLLLLLLLCX00M&&&&&&   ++ll++
+                   &&&&&&&&&q0L  zLLLL00&&&&&&&&&&   ++ll++
+                   &&&&&&&&&&&&  [00q&&&&&&&&&&&&&   ++ll++
+                   &&&&&&&&&&&&  ,&&&&&&&&&&&&&&&&   ++ll++
+                   &&&&&&&&&&&&,    &&&&&&&&&&&&&&&&&++ll++
+                -&&&&&&&&&&&&&&&    &&&&&&&&&&&&&&&&&++ll++
+                &&&&&&&&&&&&&&@@>>>u&&&&&&&&&&&&&&@@&++ll+
+                @@@@@@@@@@@@@@@&&&&&&&&&&&&&&&&&&&a@@++ll
+                  &@@@@&&&&&&&&&&&&&&&&&&&&&&&&&&&   ++ll++
+                  ;@#ddddddpq*@@@d*d@@d*qddddddm@@   ++ll++
+                  &&&&&&&&&&&#mdB@@@wd@#&&&&&&&&&&   ++ll++
+                  &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&w  ++ll++
+                 &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&  ++##++
+                 &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& ++##++
+                &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& ++##++
+               M&&&&&&&&&&&&&&&&u   B&&&&&&&&&&&&&&&&++##++
+              ;@&&&&&&&&&&&&&&@i<>>>>q@#&&&&&&&&&&&&@++##++
+             >@@@@@@@@@@@@@@@@z>>>>>>>@@@@@@@@@@@@@@@++##++<
+         >>>>>m@@@@@@@@@@@@@8>>>>>>>>>>>8@@@@@@@@@@@@++##++>>>>
+            >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><
+                        ,_>>>>>>>>>>>>>>>>>>>>+-
+
+
+      (111l  ,1111
+    111           11
+   11                 11+     11     1        111111111    111111-
+   11                   11   11     111            11   >11      ;11
+   11        11111111    11?1|     11 |1          11   <1~         11
+   /11            11i     11      11   11       11~    |1          11
+     111        ;11       11     11     11     11       11        11
+       -11111111/         11    11       11   111111111   11111111-
+
+-->
+
+
+  <link rel="stylesheet" media="all" href="https://assets.gyazo.com/dist/application-3fa908ec.css" />
+
+  <script src="https://assets.gyazo.com/dist/application-fbe811c1.js"></script><script type="text/javascript">(function(f,b){if(!b.__SV){var a,e,i,g;window.mixpanel=b;b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
+for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2;a=f.createElement("script");a.type="text/javascript";a.async=!0;a.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?MIXPANEL_CUSTOM_LIB_URL:"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";e=f.getElementsByTagName("script")[0];e.parentNode.insertBefore(a,e)}})(document,window.mixpanel||[]);
+  mixpanel.init("c3a667dbf21c4dd5185944d9cabc9e25");
+</script>
+
+
+      <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-2827501-10', 'auto');
+    ga('set', 'dimension1', 'Guest');
+    ga('set', 'dimension2', '')
+
+    ga('send', 'pageview');
+  </script>
+
+      <!-- Picoで使うかもしれないもの -->
+      <script src="https://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/aes.js"></script>
+      <script src="https://crypto-js.googlecode.com/svn/tags/3.1.2/build/components/lib-typedarrays.js"></script>
+      <script src="https://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/sha256.js"></script>
+      <script src="https://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/hmac-sha256.js"></script>
+      <script src="https://rawgit.com/davidshimjs/qrcodejs/master/qrcode.min.js"></script>
+
+  <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="6tUQuxXN/TdCWxTTGSAP9j3MXYeXl4YuKdIc8YWkbGY2UYY/4a2PucplR+zBUP33CHE5egjANd8aiY8yBqdSjg==" />
+  <link rel="icon" type="image/x-icon" href="https://assets.gyazo.com/favicon.ico">
+</head>
+<body class="card">
+
+  <div class="preload-data" data-key="flash" data-value="{}"></div><nav class="navbar navbar-fixed-top"><div class="container"><div class="navbar-logo"><a class="navbar-brand" target="_self" href="https://gyazo.com/"><div class="logo"></div></a></div></div></nav>
+
+  
+<div id="connectModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="connectModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h3 class="modal-title" id="connectModalLabel">アカウントと端末を接続</h3>
+      </div>
+      <div class="modal-body">
+        <p id="connect_email">この端末でキャプチャーされた以下の画像を<br />このアカウント(<strong></strong>)で管理しますか？</p>
+        <div id="thumbs" class="small-thumbs clearfix"></div>
+      </div>
+      <div class="modal-footer">
+        <button id="connectYesBtn" class="btn btn-info" type="submit">はい（推奨）</button>
+        <button id="connectNoBtn" class="btn btn-default" type="button">いいえ</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+      <div id="alertMessage" class="card-alert alert alert-danger" style="display:none;"></div>
+      <div class="panel panel-default panel-card">
+        <div class="panel-body">
+          <h1>
+            Gyazo にログイン
+              <small>(または<a href="/signup">アカウントを作成</a>する)</small>
+          </h1>
+          <div class="row">
+            <div class="col-sm-8 col-sm-offset-2">
+              <div id="mainFormWrap">
+                <form action="/sessions" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="IzF6bNaQPujCKcIVHgkRUfZPYSItAMnVLYcJUNilHz//tezoIvBMZkoXkSrGeeNQw/IF37JXeiQe3JqTW6Yh1w==" />
+                  
+                  <div class="form-group" style="margin-bottom:8px">
+                    <input class="form-control input-lg" placeholder="メールアドレス" type="email" name="session[email]" id="session_email" />
+                  </div>
+                  <div class="form-group" style="margin-bottom:8px">
+                    <input class="form-control input-lg" placeholder="パスワード" type="password" name="session[password]" id="session_password" />
+                  </div>
+                  <input type="submit" name="commit" value="ログイン" class="btn btn-info btn-lg btn-block" />
+</form>              </div>
+              <p style="margin-top:20px">
+                <a href="/forgot">パスワードを忘れた?</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center">
+          <p style="margin-top:20px">
+            <img width="30" src="https://assets.gyazo.com/assets/teams/teams_logo-79a389f016afb8b7d199918bc1aff8e886227ec99aa3b6bae0579b99e43baec9.png" alt="Teams logo 79a389f016afb8b7d199918bc1aff8e886227ec99aa3b6bae0579b99e43baec9" />
+            <a href="/teams/login">チームにログイン?</a>
+          </p>
+    </div>
+  </div>
+</div>
+
+
+
+  <div class="footer">
+  <div class="container">
+    <div class="whiteband clearfix">
+      <ul class="pull-left">
+        <li><a target="_self" href="/ja">ホーム</a> /</li>
+        <li><a target="_self" href="/tour">使い方</a> /</li>
+        <li><a target="_self" href="/ninja">Gyazo Ninja</a> /</li>
+        <li><a target="_self" href="/teams">Gyazo Teams</a> /</li>
+        <li>
+          <a href="http://blogjp.gyazo.com/">ブログ</a> /
+</li>
+        <li><a href="https://support.gyazo.com/hc/">ヘルプ</a> /</li>
+        <li><a target="_self" href="/contact">お問い合わせ</a> /</li>
+
+        <li><a target="_self" href="/api">開発</a> /</li>
+        <li><a target="_self" href="/assets">ロゴ画像</a> /</li>
+        <li><a target="_self" href="/doc/terms">利用規約</a> /</li>
+        <li><a target="_self" href="/doc/privacy">プライバシー</a></li>
+      </ul>
+
+      <div class="pull-right hidden-xs">
+        <a class="social-icon" href="https://www.facebook.com/gyazo" target="_blank" rel="fb_share" data-original-title="Like us on Facebook"><img id="fb_share" src="https://assets.gyazo.com/assets/footer/image-27af082e0988f9a909e9aee47ee46429b0840413d8a0181e9fbb2265a5a61949.png" alt="Image 27af082e0988f9a909e9aee47ee46429b0840413d8a0181e9fbb2265a5a61949" /></a>
+        <a class="social-icon" href="http://twitter.com/gyazo" target="_blank" rel="fb_share" data-original-title="Follow us on Twitter"><img id="tw_share" src="https://assets.gyazo.com/assets/footer/image-27af082e0988f9a909e9aee47ee46429b0840413d8a0181e9fbb2265a5a61949.png" alt="Image 27af082e0988f9a909e9aee47ee46429b0840413d8a0181e9fbb2265a5a61949" /></a>
+      </div>
+    </div>
+    <div>
+      &copy; 2015 <a href="http://notainc.com" target="_blank">Nota Inc.</a>
+      <i class="glyphicon glyphicon-globe"></i> <a data-title="Language" href="javascript:;" id="language-switch">日本語</a>
+      <span id="languages-list" style="display:none;"><a target="_self" href="?lang=en">English</a><br /><a target="_self" href="?lang=es">Español</a><br /><a target="_self" href="?lang=fr">Français</a><br /><a target="_self" href="?lang=ru">Pусский</a><br /><a target="_self" href="?lang=ja">日本語</a><br /><a target="_self" href="?lang=zh">繁體中文</a><br /><a target="_self" href="?lang=de">Deutsch</a><br /><a target="_self" href="?lang=pt">Português (Portugal)</a><br /><a target="_self" href="?lang=it">Italiano</a><br /><a target="_self" href="?lang=th">ภาษาไทย</a><br /></span>
+    </div>
+  </div>
+</div>
+
+
+  <script type="text/javascript">
+
+    var x = new QRCode(document.getElementById("mainFormWrap"), {
+      text: "Here, we should show QR code.",
+      correctLevel: QRCode.CorrectLevel.M
+    });
+
+$("#mainFormWrap form").submit(function(event){
+  event.preventDefault();
+  log_in(false, null);
+  return false;
+});
+
+function log_in(confirm, connect_device){
+  $("input[type=submit]").attr("disabled","disabled");
+  var data_params = new Object();
+  $("#mainFormWrap form input").each(function(obj){
+    data_params[this.name] = this.value;
+  });
+  if (confirm){
+    data_params["connect_device"] = connect_device ? 'true' : 'false';
+  }
+  $.ajax({
+    type: "POST",
+    url: "/sessions",
+    data: data_params,
+    dataType: "json",
+    success: function(data, dataType){
+      if (data && data.status == "confirm"){
+        // Confirm device link
+        var html = '';
+        for (var i=0;i<data.thumbs.length;i++){
+            html += '<div class="thumb"><img src="'+data.thumbs[i]+'" /></div>'
+        }
+        $('#thumbs').html(html);
+        $('#connect_email strong').text(data_params["session[email]"]);
+        $('#connectModal').modal('show');
+        $("input[type=submit]").removeAttr("disabled");
+      } else {
+        location.href = data.redirect_url;
+      }
+    },
+    error : function(XMLHttpRequest, textStatus, errorThrown){
+      if (XMLHttpRequest.status > 0){
+        var response = jQuery.parseJSON(XMLHttpRequest.responseText);
+        var message = "";
+        for (i in response.messages){
+          message += "<p>" + response.messages[i] + "</p>";
+        }
+        $("#alertMessage").html(message);
+      }else{
+        $("#alertMessage").text('サーバーに接続できません。再読込してやり直してください。');
+      }
+      if (confirm){
+        alert($("#alertMessage").text());
+        $('#connectModal').modal('hide');
+      }
+      $("#alertMessage").hide();
+      $("#alertMessage").fadeIn();
+      $("input[type=submit]").removeAttr("disabled");
+    }
+  });
+}
+
+$("#connectYesBtn").click(function(){
+    log_in(true, true);
+});
+
+$("#connectNoBtn").click(function(){
+    log_in(true, false);
+});
+
+$('#connectModal').on('hidden.bs.modal', function () {
+  $("#alertMessage").text('まだログインしていません。');
+  $("#alertMessage").hide();
+  $("#alertMessage").fadeIn();
+});
+
+</script>
+
+</body>
+</html>
